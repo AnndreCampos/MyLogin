@@ -96,4 +96,9 @@ public class ClienteDAO extends GenericDAO{
 		
 		return lista;
 	}
+	
+	public Cliente obterClientePorId(Integer id){
+		// Inserir a lógica
+		return null;
+	}
 }

@@ -18,6 +18,7 @@
 				<th>Nome</th>
 				<th>CPF</th>
 				<th>Email</th>
+				<th>Ação</th>
 			</tr>
 			<c:forEach var="cliente" items="${listaClientes}">
 			<tr>
@@ -25,6 +26,9 @@
 				<td>${cliente.nome}</td>
 				<td>${cliente.cpf}</td>
 				<td>${cliente.email}</td>
+				<td>
+					<a href="/MyLogin/ObterClienteServlet?id=${cliente.id}">Exibir</a>
+				</td>
 			</tr>
 			</c:forEach>
 		</table>
